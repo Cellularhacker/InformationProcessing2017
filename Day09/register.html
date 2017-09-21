@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>회원 가입</title>
+</head>
+<body>
+	<form method="post" action="regResult.jsp">
+		<fieldset>
+            <legend>회원가입 양식</legend>
+            <table border cellspacing=0>
+                <tr>
+                    <td>
+                        <label id="userEmail">이메일</label>
+                    </td>
+                    <td>
+                        <input id="userEmail" name="userEmail" type="email">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                            <label id="userName">이름</label>
+                    </td>
+                    <td>
+                        <input id="userName" name="userName" type="text">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                            <label id="userPassword">비밀번호</label>
+                    </td>
+                    <td>
+                        <input id="userPassword" name="userPassword" type="password">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label id="userGender">성별</label>
+                    </td>
+                    <td>
+                        <input id="userGender" name="userGender" type="radio" value="male" checked>남성&nbsp;
+                        <input id="userGender" name="userGender" type="radio" value="female">여성&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label id="userHobby">취미</label>
+                    </td>
+                    <td>
+                        <input id="userHobby" name="userHobby" type="checkbox" value="운동" checked>운동&nbsp;
+                        <input id="userHobby" name="userHobby" type="checkbox" value="음악">음악&nbsp;
+                        <input id="userHobby" name="userHobby" type="checkbox" value="개발">개발&nbsp;
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label id="userFoods">음식</label>
+                    </td>
+                    <td>
+                        <select id="userFoods" name ="userFoods" size="3" multiple>
+                            <option value="김밥">김밥</option>
+                            <option value="떡볶이">떡볶이</option>
+                            <option value="순대">순대</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="reset" name="reset" value="원래대로">&nbsp;
+                        <input type="submit" name="submit" value="제출">&nbsp;
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+	</form>
+</body>
+</html>
