@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Response 내장객체</title>
+</head>
+<body>
+	<h2>Response내장객체-리다이렉트 예제</h2>
+	
+	현재페이지는 <b>responseRedirect.jsp</b> 페이지 입니다.
+	
+	
+	<%
+		response.sendRedirect("responseRedirected.jsp");
+	%>
+</body>
+</html>
