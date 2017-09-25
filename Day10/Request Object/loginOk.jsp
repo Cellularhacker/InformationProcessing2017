@@ -14,7 +14,14 @@
 	<%
 		String userId = request.getParameter("userId");
 		String userPasswd = request.getParameter("userPasswd");
-		
+
+		// if user didn't input id or password,
+		if( (userId == null) || (userPasswd == null) ) {
+			out.print("아이디 혹은 비밀번호가 입력되지 않았습니다!");
+			return;
+		}
+			
+		// if user's id or password are not same as "abcd" & "a1234"
 		if( !(userId.equals("abcd") && userPasswd.equals("a1234")) )
 			response.sendRedirect("loginForm.jsp");
 		else
