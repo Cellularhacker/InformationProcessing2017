@@ -1,0 +1,32 @@
+#content {
+	width:940px;
+	text-align:center;
+    margin: 0px auto;
+    padding: 20px;
+}
+#top {
+	text-align:center;
+    padding: 20px;
+}
+#menu {
+	text-align:center;
+    margin: 0px auto;
+    padding: 20px;
+}
+#news {
+	width: 440px;
+	padding: 20px;
+	margin-bottom: 20px;
+	float: left;
+	text-align: left;
+}
+#shopping {
+	width: 420px;
+	padding: 20px;
+	float: left;
+	text-align: left;
+}
+#footer {
+	clear: both;
+	padding: 20px;
+}
