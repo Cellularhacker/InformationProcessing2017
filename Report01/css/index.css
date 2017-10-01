@@ -1,17 +1,15 @@
 #wrap {
-	width:600px;
+	width:720px;
 	text-align:center;
     margin: 0px auto;
     padding: 20px;
 }
 #header {
 	text-align:center;
-    padding: 20px;
 }
 #menu {
 	text-align:center;
     margin: 0px auto;
-    padding: 20px;
 }
 #content {
 	text-align:center;
