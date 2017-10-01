@@ -1,0 +1,25 @@
+#wrap {
+	width:600px;
+	text-align:center;
+    margin: 0px auto;
+    padding: 20px;
+}
+#header {
+	text-align:center;
+    padding: 20px;
+}
+#menu {
+	text-align:center;
+    margin: 0px auto;
+    padding: 20px;
+}
+#content {
+	text-align:center;
+    margin: 0px auto;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+#footer {
+	clear: both;
+	padding: 20px;
+}
