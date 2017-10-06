@@ -5,11 +5,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>(주)스마트 아이즈</title>
-    <link rel="stylesheet" type="text/css" href="/jsp_report01/css/header.css">
+    <link rel="stylesheet" type="text/css" href="/jsp_report01/css/style.css">
 </head>
+<%
+    String sessionId = (String)session.getAttribute("sessionId");
+%>
 <body>
+<div id="wrap">
 	<div id="title">
         (주)스마트 아이즈
     </div>
-</body>
-</html>
+    <%@ include file="menu.jspf" %>
+    <div id="content">

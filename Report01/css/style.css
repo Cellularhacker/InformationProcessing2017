@@ -1,0 +1,110 @@
+/*
+    FileName: style.css
+    Writer: Cellularhacker
+    Web: (주)스마트아이즈
+*/
+
+/* [Coal] Style Sheets for header.jsp && footer.jsp */
+#wrap {
+	width:720px;
+	text-align:center;
+    margin: 0px auto;
+    padding: 20px;
+}
+#title {
+    width: 720px;
+    height: 50px;
+    background-color: skyblue;
+    color: white;
+    font-size: 3em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+#content {
+	text-align:center;
+    margin: 0px auto;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+#footer {
+	clear: both;
+    padding: 20px;
+    color: black;
+}
+#footer a {
+    color: blue;
+}
+
+
+/* 사딸!!!!라!!!! */
+/* Style Sheets for menu.jsp */
+#menuWrap {
+	width:720px;
+	text-align:center;
+    margin: 0px auto;
+}
+#menu1 {
+    text-align:center;
+    width: 124px;
+    height: 15px;
+    padding: 10px;
+    float: left;
+}
+#menu2 {
+    text-align:center;
+    width: 124px;
+    height: 15px;
+    padding: 10px;
+    float: left;
+}
+#menu3 {
+    text-align:center;
+    width: 124px;
+    height: 15px;
+    padding: 10px;
+    float: left;
+}
+#menu4 {
+    text-align:center;
+    width: 124px;
+    height: 15px;
+    padding: 10px;
+    float: left;
+}
+#login {
+    text-align:center;
+    width: 124px;
+    height: 15px;
+    padding: 10px;
+    float: left;
+}
+#logout {
+    text-align:center;
+    width: 124px;
+    height: 15px;
+    padding: 10px;
+    float: left;
+}
+/* classes for <menu.jsp>*/
+.selectedMenu {
+    background-color: skyblue;
+    color: white;
+}
+.selectedMenu:hover {
+    background-color: lightgray;
+    color: white;
+}
+.unselectedMenu {
+    background-color: lightblue;
+    color: white;
+}
+.unselectedMenu:hover {
+    background-color: lightgray;
+    color: white;
+}
+
+a:link, a:visited, a:active, a:hover {
+    color: white;
+    text-decoration: none;
+}

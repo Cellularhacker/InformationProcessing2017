@@ -1,13 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>menu.jsp</title>
-    <link rel="stylesheet" type="text/css" href="/jsp_report01/css/menu.css">
-</head>
-<body>
+
     <div id="menuWrap">
         <div id="menu1" class="unselectedMenu">
             <a href="/jsp_report01/company.jsp">회사소개</a>
@@ -21,6 +14,15 @@
         <div id="menu4" class="unselectedMenu">
             <a href="/jsp_report01/board.jsp">게&nbsp;시&nbsp;판</a>
         </div>
+        <%
+            if(sessionId == null) {
+                out.println("<div id=\"login\" class=\"unselectedMenu\">");
+                out.println("<a href=\"/jsp_report01/user/login.jsp\">로&nbsp;그&nbsp;인</a>");
+                out.println("</div>");
+            } else {
+                out.println("<div id=\"logout\" class=\"unselectedMenu\">");
+                out.println("<a href=\"/jsp_report01/user/login.jsp\">로그아웃</a>");
+                out.println("</div>");
+            }
+        %>
     </div>
-</body>
-</html>
