@@ -16,12 +16,12 @@
         </div>
         <%
             if(sessionId == null) {
-                out.println("<div id=\"login\" class=\"unselectedMenu\">");
-                out.println("<a href=\"/jsp_report01/user/login.jsp\">로&nbsp;그&nbsp;인</a>");
+                out.println("<div id=\"emptyMenu\" class=\"unselectedMenu\">");
+                out.println("&nbsp;");
                 out.println("</div>");
             } else {
-                out.println("<div id=\"logout\" class=\"unselectedMenu\">");
-                out.println("<a href=\"/jsp_report01/user/login.jsp\">로그아웃</a>");
+                out.println("<div id=\"contacts\" class=\"unselectedMenu\">");
+                out.println("<a href=\"/jsp_report01/contacts.jsp\">회원주소록</a>");
                 out.println("</div>");
             }
         %>

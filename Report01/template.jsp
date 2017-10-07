@@ -1,12 +1,17 @@
+<%--
+    FileName: template.jsp
+    Writer: Cellularhacker
+    Web: (주)스마트아이즈
+--%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Insert_Title_Here</title>
-</head>
-<body>
-	
-</body>
-</html>
+
+<%-- [Header] --%>
+<%@ include file="header.jspf" %>
+
+<%-- [Content] --%>
+<%-- Default indent: 2 --%>
+        
+
+<%-- [Footer] --%>
+<%@ include file="footer.jspf" %>
