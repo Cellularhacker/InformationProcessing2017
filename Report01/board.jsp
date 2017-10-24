@@ -11,7 +11,7 @@
 
 <%-- [Content] --%>
 <%-- Default indent: 2 --%>
-        &lt;게시판 임시페이지 &gt;
+        <center>&lt;게시판 임시페이지 &gt;</center>
         <table id="board">
             <tr>
                 <th>No</th>
@@ -22,7 +22,7 @@
                 <th>추천수</th>
             </tr>
             <%
-                out.println("Write Something Here");
+                out.println("<!--Write Something Here-->");
             %>
         </table>
 
