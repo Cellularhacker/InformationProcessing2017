@@ -136,6 +136,7 @@ a:link, a:visited, a:active, a:hover {
 .loginContainer {
     width: 300px;
     margin: 0 auto;
+    margin-top: 20px;
 }
 .loginRow {
     width:300px;
