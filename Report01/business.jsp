@@ -15,7 +15,7 @@
             <img src="/jsp_report01/images/serval1.jpeg">
         </p>
         <p>
-            <span>슷-고이! 넌 코딩을 잘하는 <span class="slave"><b><i>노예</i></b></span> 프렌즈구나!</span>
+            <span>슷-고이! 넌 코딩을 잘하는 <span class="developer"><b><i>개발자</i></b></span> 프렌즈구나!</span>
         </p>
 
 <%-- [Footer] --%>
