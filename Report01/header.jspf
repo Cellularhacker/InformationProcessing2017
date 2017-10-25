@@ -17,15 +17,11 @@
             (주)스마트 아이즈
         </div>
         <%
-        out.println("<div class=\"loginOutButton\">");
-
-                if(sessionId == null) {
-                    out.println("<a href=\"/jsp_report01/user/login.jsp\">로&nbsp;그&nbsp;인</a>");
-                } else {
-                    out.println("<a href=\"/jsp_report01/user/logout.jsp\">로그아웃</a>");
-                }
-            
-        out.println("</div>");
+            if(sessionId == null) {
+                out.println("<a class=\"loginOutButton\" href=\"/jsp_report01/user/login.jsp\">로&nbsp;그&nbsp;인</a>");
+            } else {
+                out.println("<a class=\"loginOutButton\" href=\"/jsp_report01/user/logout.jsp\">로그아웃</a>");
+            }
         %>
     </div>
     <%@ include file="menu.jspf" %>
