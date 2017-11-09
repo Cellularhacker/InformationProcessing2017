@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+
+<%@ page import="java.sql.*"%>
+
+                    <%
+                    try {                        
+                        Class.forName("com.mysql.jdbc.Driver");
+                        conn=DriverManager.getConnection(jdbcUrl,dbId ,dbPass );
+
+                        String sql= "select id, name, gender, address, tel from jsp_report where id= ?";
+                        pstmt=conn.prepareStatement(sql);
+                        pstmt.setString(1,id);
+                        rs=pstmt.executeQuery();
+                        
+                        if(rs.next()){
+                            out.println("<form method=\"post\" action=\"addressEditPro.jsp\">");
+                            out.println("아이디: " + rs.getString("id") +"<br>");
+                            out.println("이름: <input type=\"text\" name=\"name\" maxlength=\"10\" value=\"" + rs.getString("name") + "\"><br>");
+                            if(rs.getString("gender").equals("male"))
+                                out.println("성별: 남<input type=\"radio\" name=\"gender\" value=\"male\" checked=\"checked\">&nbsp; 여<input type=\"radio\" name=\"gender\" value=\"female\"><br>");
+                            else
+                                out.println("성별: 남<input type=\"radio\" name=\"gender\" value=\"male\">&nbsp; 여<input type=\"radio\" name=\"gender\" value=\"female\" checked=\"checked\"><br>");
+                            out.println("주소: <input type=\"text\" name=\"address\" maxlength=\"100\" value=\"" + rs.getString("address") +"\"><br>");
+                            out.println("전화번호: <input type=\"text\" name=\"tel\" maxlength=\"20\" value=\"" + rs.getString("tel") + "\"><br>");
+                            out.println("<input name=\"id\" type=\"hidden\" value=\"" + rs.getString("id") + "\">");
+                            out.println("<input type=\"submit\" value=\"입력완료\">");
+                            out.println("</form>");
+                        }
+                    }catch(Exception e){ 
+                        e.printStackTrace();
+                    }finally{
+                        if(rs != null) 
+                            try{rs.close();}catch(SQLException sqle){}
+                        if(pstmt != null) 
+                            try{pstmt.close();}catch(SQLException sqle){}
+                        if(conn != null) 
+                            try{conn.close();}catch(SQLException sqle){}
+                    }
+                    %>

@@ -19,5 +19,14 @@
             <span>DDDD</span>
         </p>
 
+        &gt;<%= getServletContext().getContextPath() %><br>
+        &lt;<%=request.getContextPath()%> <br>
+        &gt;<%=request.getRequestURI()%>
+        <%
+            String pPath = request.getContextPath();
+            out.println("\npath=> " + pPath);
+        %>
+        <% out.write(request.getContextPath()); %>
+
 <%-- [Footer] --%>
 <%@ include file="footer.jspf" %>
