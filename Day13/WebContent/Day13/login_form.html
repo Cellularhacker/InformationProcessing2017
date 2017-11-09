@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>login_form.html</title>
+	<link rel="stylesheet" type="text/css" href="day13.css">
+</head>
+<body>
+	<div id="login-Container">
+		<div id="loginHeader">
+			<h2>로그인</h2>
+		</div>
+		
+		<hr>
+		
+		<div id="loginForm">
+			<!-- Login Form -->
+			<form action="login.jsp" method="post">
+				<table>
+					<tr>
+						<td colspan="2">로그인</td>
+					</tr>
+					<tr>
+						<td class="formLabels">아이디</td>
+						<td><input type="text" name="userid" size="10"></td>				
+					</tr>
+					<tr>
+						<td>비밀번호</td>
+						<td><input type="text" name="passwd" size="10"></td>				
+					</tr>
+					<tr>
+						<td colspan="2"><input type="submit" value="로그인"></td>
+					</tr>
+				</table>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
