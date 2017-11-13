@@ -48,11 +48,11 @@
                 pstmt.setTimestamp(8,register);
                 pstmt.executeUpdate();
 
-                str= "member 테이블에 새로운 레코드를 추가했습니다.";
+                str= "성공적으로 추가 하였습니다.";
 
             }catch(Exception e){ 
                 e.printStackTrace();
-                str="member 테이블에 새로운 레코드를 추가에 실패했습니다";
+                str="새로운 멤버의 추가에 실패하였습니다.";
 
 
             }finally{

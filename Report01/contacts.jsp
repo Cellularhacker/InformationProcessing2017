@@ -55,7 +55,7 @@
                     out.println("</tr>");
                     out.println("</form>");
                 }
-                out.println("<form method=\"post\" action=\"addressPage.jsp\">");
+                out.println("<form method=\"post\" action=\"address/addressPage.jsp\">");
                 out.println("<tr>");
                 out.println("<td colspan=\"6\">");
                 out.println("<input name=\"submit\" type=\"submit\" value=\"추가\" >");
